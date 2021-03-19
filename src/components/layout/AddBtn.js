@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 
 const AddBtn = () => {
     return (
@@ -13,7 +14,7 @@ const AddBtn = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="#tech-modal" className="btn-floating btn-large red modal-trigger">
+                    <a href="#add-tech-modal" className="btn-floating btn-large red modal-trigger">
                         <i className="larg material-icons">person_add</i>
                       person
                     </a>

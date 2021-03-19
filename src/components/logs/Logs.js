@@ -8,6 +8,7 @@ const Logs = () => {
 
     useEffect(() => {
         getLogs();
+        // eslint-disable-next-line
     }, [])
     const getLogs = async () => {
         setLoading(true);

@@ -1,4 +1,21 @@
 {
+  "techs": [
+    {
+      "id": 1,
+      "firstName": "arash",
+      "lastName": "mehdipour"
+    },
+    {
+      "id": 2,
+      "firstName": "ali",
+      "lastName": "mehdipour"
+    },
+    {
+      "id": 3,
+      "firstName": "pari",
+      "lastName": "mehdipour"
+    }
+  ],
   "logs": [
     {
       "id": 1,
@@ -27,23 +44,6 @@
       "date": "03-05-2022",
       "tech": "kalun shfa",
       "attention": true
-    }
-  ],
-  "techs": [
-    {
-      "id": 1,
-      "firstName": "arash",
-      "lastName": "mehdipour"
-    },
-    {
-      "id": 2,
-      "firstName": "ali",
-      "lastName": "mehdipour"
-    },
-    {
-      "id": 3,
-      "firstName": "pari",
-      "lastName": "mehdipour"
     }
   ]
 }
