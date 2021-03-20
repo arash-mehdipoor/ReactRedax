@@ -24,6 +24,7 @@ const AddLogModal = ({ addLogs }) => {
             }
             addLogs(newLog);
             setMessage('');
+            M.toast({ html: "success add new log" });
             setTech('');
             setattention(false);
         }
