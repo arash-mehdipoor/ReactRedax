@@ -18,32 +18,11 @@
   ],
   "logs": [
     {
-      "id": 1,
-      "message": "Changed hard drive on workstion 005",
-      "date": "03-02-2019",
-      "tech": "Sam Smith",
-      "attention": false
-    },
-    {
-      "id": 2,
-      "message": "on workstion 005",
-      "date": "01-03-2020",
-      "tech": "jun ber",
-      "attention": true
-    },
-    {
-      "id": 3,
-      "message": "hard 005",
-      "date": "01-03-2021",
-      "tech": "viliam smone",
-      "attention": false
-    },
-    {
-      "id": 4,
-      "message": "workstion 005",
-      "date": "03-05-2022",
-      "tech": "kalun shfa",
-      "attention": true
+      "message": "آرش مهدی پور",
+      "attention": true,
+      "tech": "John Doe",
+      "date": "2021-03-19T15:42:37.012Z",
+      "id": 1
     }
   ]
 }
