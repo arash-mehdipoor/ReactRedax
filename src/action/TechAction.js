@@ -3,7 +3,6 @@ import {
     ADD_TECH,
     DELETE_TECH,
     TECHS_ERROR,
-    LOGS_ERROR,
     SET_LOADING
 } from './types';
 
@@ -39,6 +38,25 @@ export const addTech = tech => async dispatch => {
             payload: err.response.statusText
         })
     }
+
+}
+
+export const deleteTech = id => async dispatch => {
+    try {
+        await fetch(`/techs/${id}`, {
+            method: 'DELETE'
+        });
+        dispatch({
+            type: DELETE_TECH,
+            payload: id
+        })
+    } catch (err) {
+        dispatch({
+            type: TECHS_ERROR,
+            payload: err.response.statusText
+        })
+    }
+
 
 }
 export const setLoading = () => {
