@@ -15,10 +15,22 @@ const initialState = {
 
 const TechReducer = (state = initialState, action) => {
     switch (action.type) {
+        case ADD_TECH:
+            return {
+                ...state,
+                techs: [...state.techs, action.payload],
+                loading: false
+            }
         case GET_THECHS:
             return {
                 ...state,
                 techs: action.payload,
+                loading: false
+            }
+        case TECHS_ERROR:
+            return {
+                ...state,
+                error: action.payload,
                 loading: false
             }
         case SET_LOADING:
