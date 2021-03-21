@@ -1,20 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+import { getTech } from '../../action/TechAction';
 import TechItem from './TechItem';
 
-const TechListModal = () => {
-
-    const [techs, setTechs] = useState([]);
+const TechListModal = ({ tech: { techs, loading }, getTech }) => {
 
     useEffect(() => {
-        getTechs();
-        // eslint-disable-next-line
+        getTech()
     }, [])
-
-    const getTechs = async () => {
-        const res = await fetch('/techs');
-        const data = await res.json();
-        setTechs(data);
-    }
 
     return (
         <div id="tech-list-modal" className="modal" style={modalStyle}>
@@ -22,7 +15,7 @@ const TechListModal = () => {
 
                 <h4 className="center">System techs</h4>
                 <ul className="collection">
-                    {techs.length === 0 ? (<p>No techs To Show</p>) :
+                    {!loading && techs === null ? (<p>No techs To Show</p>) :
 
                         (
                             techs.map(tech => <TechItem key={tech.id} tech={tech} />)
@@ -39,4 +32,7 @@ const modalStyle = {
     width: '75%',
     height: '75%'
 }
-export default TechListModal
+const mapStateToProps = state => ({
+    tech: state.tech
+})
+export default connect(mapStateToProps, { getTech })(TechListModal);

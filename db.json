@@ -2,41 +2,27 @@
   "techs": [
     {
       "id": 1,
-      "firstName": "arash",
-      "lastName": "mehdipour"
+      "firstName": "آرش",
+      "lastName": "مهدی پور"
     },
     {
       "id": 2,
-      "firstName": "ali",
-      "lastName": "mehdipour"
+      "firstName": "علی",
+      "lastName": "مهدی پور"
     },
     {
       "id": 3,
-      "firstName": "pari",
-      "lastName": "mehdipour"
+      "firstName": "پری",
+      "lastName": "مهدی پور"
     }
   ],
   "logs": [
     {
-      "id": 2,
-      "message": "ابوالفضل",
-      "attention": false,
-      "tech": "John Doe",
-      "date": "2021-03-20T08:18:20.600Z"
-    },
-    {
-      "id": 3,
-      "message": "پری",
-      "attention": false,
-      "tech": "Sam Smit",
-      "date": "2021-03-20T08:17:27.295Z"
-    },
-    {
-      "id": 4,
-      "message": "علی",
+      "message": "dddddd",
       "attention": true,
-      "tech": "Sara Wilson",
-      "date": "2021-03-20T08:17:35.392Z"
+      "tech": "John Doe",
+      "date": "2021-03-20T12:16:21.536Z",
+      "id": 1
     }
   ]
 }
