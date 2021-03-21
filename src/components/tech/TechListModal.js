@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getTech } from '../../action/TechAction';
 import TechItem from './TechItem';
@@ -31,6 +32,10 @@ const TechListModal = ({ tech: { techs, loading }, getTech }) => {
 const modalStyle = {
     width: '75%',
     height: '75%'
+}
+TechListModal.propTypes = {
+    tech: PropTypes.object.isRequired,
+    getTech: PropTypes.func.isRequired
 }
 const mapStateToProps = state => ({
     tech: state.tech
